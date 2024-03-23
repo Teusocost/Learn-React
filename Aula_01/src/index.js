@@ -8,12 +8,10 @@ class App extends React.Component {
   render() {
     //comentario
     return (
-      <h1>
-        Hello React!! teste
-
-        <Button> </Button> {/* foramto  1*/}
-        <Button /> {/*Formato  2 */}
-      </h1>
+      <div>
+        <Button title = "opa" descricao="123"> Maionese </Button> {/* formato  1*/}
+        {/* <Button />  1*/} {/*Formato  2 */}
+      </div>
     );
   }
 }
