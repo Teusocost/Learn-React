@@ -9,4 +9,4 @@ class Button extends Component {
     }
 }
 
-export default Button;
+export default Button; //Dessa maneira não é ncessário colocar as chaves no index principal
