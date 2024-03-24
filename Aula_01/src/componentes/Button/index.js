@@ -1,13 +1,26 @@
 import React, { Component } from "react";
 
-class Button extends Component {
-
-    render(){
-
-        return (
-               <button onClick={this.props.press}> {this.props.children} </button>
-        );
+const Button = (props) => {
+    
+    /*UNSAFE_componentWillMount(){
+        console.log('componentWillMount');
+      }
+    
+    componentDidMount(){
+        console.log('componentDidMount');
     }
+    
+    render(){
+        console.log('render')
+        
+        return (
+            <button onClick={this.props.press}> {this.props.children} </button>
+            );
+    */
+
+            return (
+                <button onClick={props.press}> {props.children} </button>
+            );    
 }
 
 

@@ -2,6 +2,9 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Button from './componentes/Button';
+import { createRoot } from 'react-dom/client';
+const container = document.getElementById('app');
+const root = createRoot(container); // createRoot(container!) if you use TypeScript
 
 
 class App extends Component {
@@ -15,7 +18,8 @@ class App extends Component {
       nome: e.target.value,
     });
   }
-
+  
+  
   adicionar = () => {
     this.setState({
       contador: this.state.contador+1
@@ -27,11 +31,14 @@ class App extends Component {
     //comentario
     return (
       <div>
-        <input onChange={this.ChangeText} /> 
-        nome: {this.state.nome} <br />
-        contador: {this.state.contador}
+        <input onChange={this.ChangeText} />
+        <br />
+        nome: {this.state.nome}
+        <br />
+        contatos: {this.state.contador}
+        <br />
         <Button press = {this.adicionar}> 
-        Maionese 
+        contador 
         </Button> {/* formato  1*/}
           {/* <Button />  1*/} {/*Formato  2 */}
       </div>
@@ -39,4 +46,4 @@ class App extends Component {
   }
 }
 
-render(<App />, document.getElementById('app'));
+root.render(<App tab="home" />);
