@@ -29,9 +29,12 @@ const Rodape = () => {
         </section>
 
         <section>
-            <p>
-                Desenvolvido por Alura.
-            </p>
+            <div>
+                <a> Desenvolvido por </a> 
+                <a href="https://github.com/Teusocost" target="_blank">
+                    Teusocost.
+                </a>
+            </div>
         </section>
     </footer>
     )

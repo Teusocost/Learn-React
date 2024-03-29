@@ -1,7 +1,8 @@
 .Banner {
     background-color: #6278f7;
+    border-radius: 20px;
     text-align: center;
-
+    background-image: linear-gradient(to left,#004AAD,#5DE0E6)
 
 }
 
