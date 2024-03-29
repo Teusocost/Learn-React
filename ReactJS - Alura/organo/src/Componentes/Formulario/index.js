@@ -10,7 +10,7 @@ const Formulario = (props) => {
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
     const [imagem, setImagem] = useState('')
-    const [time, setTime] = useState('')
+    const [time, setTime] = useState('Programação')
     const [curiosidade, setCuriosidade] = useState('')
 
     const aoSalvar = (event) => {
@@ -19,9 +19,15 @@ const Formulario = (props) => {
             nome,
             cargo,
             imagem,
+            curiosidade,
             time
         })
-        console.log("form foi submetido => ", nome, cargo, imagem, time)
+        //console.log("form foi submetido => ", nome, cargo, imagem, curiosidade, time)
+        setNome('')
+        setCargo('')
+        setImagem('')
+        setTime('')
+        setCuriosidade('')
     }
     return (
         <section className="formulario">
