@@ -1,0 +1,15 @@
+body {
+    padding: 10px;
+    background-color: azure;
+    padding-bottom: 500px;
+}
+
+h1 {
+    color: darkgreen;
+
+}
+
+p{
+    background-color: rgb(64, 107, 89);
+    padding: 10px;
+}
