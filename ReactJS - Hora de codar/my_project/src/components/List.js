@@ -8,8 +8,8 @@ function List(){
             <ul>
                 <li>Item 1</li>
                 <li>Item 2</li>
-                <Item marca = "Ferrari" /> 
-                <Item marca = "Fiat" /> 
+                <Item marca = "Ferrari" ano_lancamento={1985} /> 
+                <Item marca = "Fiat"/> 
             </ul>
         </>
     )
