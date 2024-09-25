@@ -1,0 +1,15 @@
+.social_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none; /*Isso remove o ponto*/
+}
+
+.social_list li{
+    margin : 0 1em;
+}
+.social_list svg{
+    font-size: 2em;
+    color: rgb(48, 70, 70);
+    cursor: pointer;
+}
