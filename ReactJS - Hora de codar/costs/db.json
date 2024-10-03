@@ -1,21 +1,76 @@
 {
-    "projects": [],
-    "categories": [
-            {
-                "id": 1,
-                "name": "Infra"
-            },
-            {
-                "id": 2,
-                "name": "Desenvolvimento"
-            },
-            {
-                "id": 3,
-                "name": "Desing"
-            },
-            {
-                "id": 4,
-                "name": "Planejamento"
-            }
-    ]
+  "projects": [],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Infra"
+    },
+    {
+      "id": "2",
+      "name": "Desenvolvimento"
+    },
+    {
+      "id": "3",
+      "name": "Desing"
+    },
+    {
+      "id": "4",
+      "name": "Planejamento"
+    },
+    {
+      "id": "35c8",
+      "name": "123",
+      "budget": "123",
+      "cost": 0,
+      "service": []
+    },
+    {
+      "id": "e7ce",
+      "name": "123",
+      "budget": "123",
+      "cost": 0,
+      "service": []
+    },
+    {
+      "id": "16b2",
+      "name": "123",
+      "budget": "123",
+      "cost": 0,
+      "service": []
+    },
+    {
+      "id": "6553",
+      "name": "123",
+      "budget": "123",
+      "cost": 0,
+      "service": []
+    },
+    {
+      "id": "2947",
+      "name": "sadfc",
+      "budget": "2",
+      "cost": 0,
+      "service": []
+    },
+    {
+      "id": "c8e5",
+      "name": "asdf",
+      "cost": 0,
+      "service": []
+    },
+    {
+      "id": "83f5",
+      "name": "qawef",
+      "budget": "123",
+      "cost": 0,
+      "service": []
+    },
+    {
+      "id": "0d09",
+      "budget": "123",
+      "name": "ewf",
+      "cost": 0,
+      "service": []
+    }
+  ]
 }

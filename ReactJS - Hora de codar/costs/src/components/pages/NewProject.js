@@ -6,7 +6,7 @@ function NewProject() {
 
     const history = useNavigate()
 
-    function createPost(project){
+    function createPost(project) {
         // initialize const and services
         project.cost = 0
         project.service = []
@@ -19,13 +19,17 @@ function NewProject() {
             body: JSON.stringify(project),
         }
         )
-        .then
-        ((res) => res.json())
-        .then
-        ((data) => { console.log(data) })
-        //redirect
-        .catch
-        ((err) => { console.log(err) })
+            .then
+            ((res) => res.json())
+            .then
+            ((data) => {
+                console.log(data)
+                //redirect
+                history('/projects',{state: {message: "Projeto criado com sucesso"}})
+
+            })
+            .catch
+            ((err) => { console.log(err) })
     }
 
     return (
@@ -33,7 +37,7 @@ function NewProject() {
             <h1>Criar projeto</h1>
             <p> Crie seu projeto para depois adicionar os serviços</p>
             <p>Formulário</p>
-            <ProjectForm handleSubmit = {createPost} btnText="Criar projeto" />
+            <ProjectForm handleSubmit={createPost} btnText="Criar projeto" />
         </div>
     )
 }
