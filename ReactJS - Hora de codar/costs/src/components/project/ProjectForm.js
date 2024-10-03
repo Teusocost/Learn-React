@@ -27,7 +27,6 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
 
     const submit = (e) => {
         e.preventDefault();
-        console.log(project)
         handleSubmit(project);
     }
 
@@ -42,37 +41,39 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
                 id: e.target.value,
                 name: e.target.options[e.target.selectedIndex].text,
             },
-        })
-    }
-        
-    return (
-            <form onSubmit={submit} className={styles.form}>
-                <Input
-                    type="text"
-                    text="Nome do projeto"
-                    placeholder="Indica o nome do projeto"
-                    name="name"
-                    handleOnChange={handleChange}
-                    value = {project.name ?project.name:'' }
-                />
-                <Input
-                    type="Number"
-                    text="Orçamento"
-                    placeholder="Insira o orcamento total"
-                    name="budget"
-                    handleOnChange={handleChange}
-                    value = {project.budget?project.budget: ''}
-                />
-                <Select
-                    name="category_id"
-                    text="Seleciona a categoria"
-                    handleOnChange={handleCategory}
-                    options={categories} 
-                    value = {project.category ? project.category.id : ''}
-                />
-                <SubmitButton text={btnText} />
-            </form>
+        }
         )
+        
+    }
+
+    return (
+        <form onSubmit={submit} className={styles.form}>
+            <Input
+                type="text"
+                text="Nome do projeto"
+                placeholder="Indica o nome do projeto"
+                name="name"
+                handleOnChange={handleChange}
+                value={project.name ? project.name : ''}
+            />
+            <Input
+                type="Number"
+                text="Orçamento"
+                placeholder="Insira o orcamento total"
+                name="budget"
+                handleOnChange={handleChange}
+                value={project.budget ? project.budget : ''}
+            />
+            <Select
+                name="category_id"
+                text="Seleciona a categoria"
+                handleOnChange={handleCategory}
+                options={categories}
+                value={project.category ? project.category.id : ''}
+            />
+            <SubmitButton text={btnText} />
+        </form>
+    )
 }
 
-    export default ProjectForm
+export default ProjectForm

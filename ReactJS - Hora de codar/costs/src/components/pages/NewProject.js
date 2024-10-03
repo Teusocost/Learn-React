@@ -10,6 +10,7 @@ function NewProject() {
         // initialize const and services
         project.cost = 0
         project.service = []
+        project.id = project.name;
 
         fetch('http://localhost:5000/projects', {
             method: "POST",
