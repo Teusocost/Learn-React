@@ -1,0 +1,14 @@
+// Arquivo de conf de json para javascreipt
+
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "noImplicitAny": true,
+        "module": "commonjs",
+        "target": "ES6" //versão do javascript
+    
+    },
+    "include":["src/**/*", "dist"],
+    "exclude": ["node_modules"],
+
+}
